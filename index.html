@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>hotel-booking-confirmation-page-main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main-square">
       <div class="very-top space-btw">
-        <div class="top left">
-          <div class="page">
+        <div class="top-left">
+          <div class="DMmono">
             <p>BOOKING · CONFIRMED</p>
           </div>
           <div class="space-btw">
@@ -20,7 +24,7 @@
           </div>
         </div>
         <div class="top-buttons">
-          <button class="print-receipt">print receipt</button>
+          <button class="print-receipt">Print receipt</button>
           <button class="calendar">Add to calendar</button>
         </div>
       </div>
@@ -29,31 +33,31 @@
         <div class="receipt">
           <div class="space-btw">
             <div>
-              <p>RECEIPT</p>
-              <h3><b>Your stay</b></h3>
+              <p class="DMmono">RECEIPT</p>
+              <h3><b class="Fraunces">Your stay</b></h3>
             </div>
-            <div>
+            <div class="DMmono">
               <p>No MS-2026</p>
               <p>0421-AH</p>
             </div>
           </div>
           <hr />
-          <div class="space-btw">
+          <div class="space-btw checking">
             <div class="check-in">
-              <p>CHECK IN</p>
-              <h2>23 Apr</h2>
-              <p>Saturday · 15:00</p>
+              <p class="DMmono">CHECK IN</p>
+              <h2 class="Fraunces">25 Apr</h2>
+              <p class="DMsans">Saturday · 15:00</p>
             </div>
             <div class="check-out">
-              <p>CHECK OUT</p>
-              <h2>29 Apr</h2>
-              <p>Wednesday · 11:00</p>
+              <p class="DMmono">CHECK OUT</p>
+              <h2 class="Fraunces">29 Apr</h2>
+              <p class="DMsans">Wednesday · 11:00</p>
             </div>
           </div>
-          <div class="space-btw">
+          <div class="space-btw DMsans">
             <div>
               <p>Room · La Garrigue × 4 nights</p>
-              <p>breakfast × 2 guests</p>
+              <p>BREAKFAST × 2 guests</p>
               <p>Tourist tax</p>
             </div>
             <div>
@@ -64,29 +68,29 @@
           </div>
           <hr />
           <div class="space-btw">
-            <h6>TOTAL PAID</h6>
-            <h5>€730.40</h5>
+            <h6 class="DMmono">TOTAL PAID</h6>
+            <h2 class="Fraunces">€730.40</h2>
           </div>
-          <div class="space-btw">
+          <div class="space-btw DMmono">
             <p>PAID · WISE · GBP</p>
             <img src="assets/images/icon-barcode.svg" alt="barcode" />
           </div>
         </div>
 
         <div class="welcome-card">
-          <div class="space-btw">
+          <hr>
+          <div class="space-btw DMmono welcome-title">
             <p>WELCOME CARD</p>
-            <img src="" alt="" />
+            <img src="assets/images/icon-sun.svg" alt="sun" />
           </div>
-          <hr style="border: 1px black dotted" />
-          <p>A note from your host,</p>
-          <h4>Margaux</h4>
-          <p>
+          <p class="Fraunces">A note from your host,</p>
+          <h4 class="Fraunces">Margaux</h4>
+          <p class="DMsans">
             We're so glad you're coming. The shutters will be open, the lemonade
             cold. and the cat - Poivre - pretending not to notice
           </p>
           <p>ROOM</p>
-          <h5>La Garrigue</h5>
+          <h3 class="Fraunces">La Garrigue</h3>
         </div>
       </div>
 
@@ -98,7 +102,7 @@
 
       <div class="extra">
         <div class="block">
-          <div class="space-btw title-thing1">
+          <div class="space-btw title-thing1 subsection">
             <div class="space-btw">
               <img src="assets/images/icon-key.svg" alt="keys" />
               <h4>ARRIVAL</h4>
@@ -106,14 +110,14 @@
             <h3>01</h3>
           </div>
           <h2>Check-in from 15:00</h2>
-          <p>Sat, 25 April</p>
-          <p>
+          <p class="subsection-intro">Sat, 25 April</p>
+          <p class="subsection-paragraph">
             Ring the brass bell by the blue door. If we're at the market, the
             key is in the terracotta pot by the olive tree
           </p>
         </div>
         <div class="block">
-          <div class="space-btw title-thing2">
+          <div class="space-btw title-thing2 subsection">
             <div class="space-btw">
               <img src="assets/images/icon-wifi.svg" alt="wifi" />
               <h4>WIFI</h4>
@@ -121,21 +125,21 @@
             <h3>02</h3>
           </div>
           <h2>Le Soleil · Guest</h2>
-          <p>Password below</p>
-          <div class="space-btw">
-            <p>NETWORK</p>
-            <p>Le Soleil Guest</p>
+          <p class="subsection-intro">Password below</p>
+          <div class="space-btw wifi-stuff">
+            <p class=" DMmono">NETWORK</p>
+            <p class="DMsans">Le Soleil Guest</p>
           </div>
-          <div class="space-btw">
-            <p>PASSWORD</p>
+          <div class="space-btw wifi-stuff">
+            <p class="DMmono">PASSWORD</p>
             <div style="display: flex">
-              <p>soleil-2026</p>
-              <button>COPY</button>
+              <p class="DMsans">soleil-2026</p>
+              <button class="DMmono">COPY</button>
             </div>
           </div>
         </div>
         <div class="block">
-          <div class="space-btw title-thing3">
+          <div class="space-btw title-thing3 subsection">
             <div class="space-btw">
               <img
                 src="assets/images/icon-breakfast.svg"
@@ -146,8 +150,8 @@
             <h3>03</h3>
           </div>
           <h2>Served 8 - 10:30</h2>
-          <p>On the terrace</p>
-          <p>
+          <p class="subsection-intro">On the terrace</p>
+          <p class="subsection-paragraph">
             Fresh figs, Marsielle honey, pain au levain, and espresso.
             Gluten-free option? Leave a note the night before.
           </p>

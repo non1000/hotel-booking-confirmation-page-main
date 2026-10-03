@@ -2,7 +2,9 @@
 *{
     padding: 0;
     margin: 0;
-
+}
+h1, h2, h3, h4 {
+  font: "Fraunces", light;
 }
 body{
     background-color: aliceblue;
@@ -14,22 +16,39 @@ body{
 .main-square{
     background-color: hsl(35, 60%, 96%);
     margin: 60px;
+    padding-bottom: 40px;
 }
 .very-top{
     display: flex;
 }
-
+.DMmono{
+    font-family: "DM Mono";
+    font-size: x-small;
+    color: hsl(32, 20%, 29%);
+}
+.DMsans{
+    font-family: "DM Sans";
+}
+.Fraunces{
+    font-family: "Fraunces";
+    font-weight: 400; 
+}
+.top-left{
+    margin: 15px 15px 5px 25px;
+}
 .top-buttons{
     display: flex;
     margin-top: 2%;
+    margin-right: 20px;
 }
 .top-buttons *{
     height: 20px;
     width: 85px;
     border-radius: 20px;
     font-size: 9px;
-    font-weight: 500;
+    font-weight: 800;
     margin-right: 10px;
+    font-family: "DM Sans";
 }
 i{
     color: hsl(15, 69%, 37%);
@@ -54,16 +73,39 @@ i{
     height: 300px;
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
+    transition: transform 0.4s ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 .receipt{
     background-color: white;
+    transform: rotate(-6deg);
 }
 .receipt *{
     margin-bottom: 4px;
 }
-
+.checking *{
+    text-align: center;
+}
+.check-out{
+    justify-content: center;
+}
+.welcome-title p{
+    margin-top: 10px;
+}
+.welcome-card hr{
+    border:1.4px hsl(22, 72%, 56%) dashed;
+    margin-bottom: 8px;
+}
 .welcome-card{
-    background-color: hsl(15, 69%, 37%);
+    background: linear-gradient(1353deg, hsl(15, 74%, 41%), hsl(18, 62%, 47%), hsl(22, 72%, 56%));
+    transform: rotate(4deg);
+    margin-left: -30px;
+}
+.space:hover .receipt {
+    transform: rotate(-10deg) translateX(-30px);
+}
+.space:hover .welcome-card {
+    transform: rotate(8deg) translateX(30px);
 }
 .middle-thing{
     display: flex;
@@ -75,12 +117,14 @@ i{
 }
 .extra{
     display: flex;
+    justify-content: center;
 }
 .block{
     width: 350px;
     background-color: white;
     margin: 10px;
     border-radius: 15px;
+    padding-bottom: 15px;
 }
 .block p{
     margin: 8px 15px 0 15px;
@@ -88,16 +132,48 @@ i{
 .block h2{
     margin: 10px 15px 0 15px;
 }
-.title-thing1{
+
+.subsection{
     margin: 15px;
+}
+.subsection h4{
+    font-family: "DM Mono";
+    font-weight: 500;
+    margin-top: 6px;
+}
+.subsection h3{
+    font-family: "Fraunces";
+    font-weight: light;
+    font-size: larger;
+    margin-top: 6px;
+}
+
+.subsection-paragraph{
+    font-family: "DM Sans";
+    font-size: small;
+}
+.subsection-intro{
+    font-family: "DM Sans";
+    font-size: smaller;
+    color: hsl(32, 13%, 47%);
+
+}
+.wifi-stuff{
+    background-color: hsl(60, 2%, 88%);
+    border-radius: 8px;
+    border-width: 5px;
+    border-color: white;
+    margin: 2px 10px 0 10px;
+
+}
+
+.title-thing1{
     color: hsl(15, 69%, 37%);
 }
 .title-thing2{
-    margin: 15px;
     color: hsl(230, 49%, 56%);
 }
 .title-thing3{
-    margin: 15px;
     color: hsl(340, 48%, 52%);
 }
 
