@@ -50,9 +50,12 @@ body{
     margin-right: 10px;
     font-family: "DM Sans";
 }
-i{
+.top-left i{
     color: hsl(15, 69%, 37%);
     padding-left: 5px;
+}
+.welcome-card i{
+    color: hsl(42, 83%, 58%);
 }
 .print-receipt{
     border-width: 1px;
@@ -100,6 +103,13 @@ i{
     background: linear-gradient(1353deg, hsl(15, 74%, 41%), hsl(18, 62%, 47%), hsl(22, 72%, 56%));
     transform: rotate(4deg);
     margin-left: -30px;
+}
+.welcome-card p{
+    color: hsl(35, 60%, 96%);
+    margin-top: 15px;
+}
+.welcome-card h1, h3{
+    color: hsl(35, 60%, 96%);
 }
 .space:hover .receipt {
     transform: rotate(-10deg) translateX(-30px);
